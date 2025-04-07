@@ -4,23 +4,119 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Colt's Lawn & Landscape</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f6f6f6;
+      color: #333;
+    }
+    header {
+      background: url("Colt's Lawn & Landscape - Horse and Tree.png") no-repeat center center;
+      background-size: cover;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    }
+    header p {
+      font-size: 1.5rem;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+    }
+    nav {
+      background: #1b5e20;
+      padding: 15px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+      background: white;
+      margin-top: 20px;
+      border-radius: 8px;
+    }
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    .services ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      list-style: none;
+      gap: 15px;
+      padding: 0;
+    }
+    .services li {
+      background: #e8f5e9;
+      padding: 15px;
+      border-left: 5px solid #2e7d32;
+      font-weight: bold;
+      border-radius: 4px;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background: #2e7d32;
+      color: white;
+      margin-top: 40px;
+    }
+    .social a {
+      color: white;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+    form input,
+    form textarea,
+    form button {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+    }
+    form button {
+      background: #2e7d32;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    form button:hover {
+      background: #1b5e20;
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>Colt's Lawn & Landscape</h1>
     <p>Estate Property Management</p>
   </header>
+
   <nav>
     <a href="#about">About</a>
     <a href="#services">Services</a>
     <a href="#portfolio">Portfolio</a>
     <a href="#contact">Contact</a>
   </nav>
+
   <section id="about">
     <h2>About Us</h2>
     <p>Colt's Lawn & Landscape provides professional groundskeeping and landscape solutions with a focus on estate-level property care. Our attention to detail and dedication to greener lawns sets us apart.</p>
   </section>
+
   <section id="services" class="services">
     <h2>Our Services</h2>
     <ul>
@@ -45,19 +141,22 @@
       <li>Gravel Driveway Refurbishing</li>
     </ul>
   </section>
+
   <section id="portfolio">
     <h2>Portfolio</h2>
     <p>Before & After work samples coming soon!</p>
   </section>
+
   <section id="contact">
     <h2>Request a Quote</h2>
     <form action="mailto:contact@coltslawn.com" method="post" enctype="text/plain">
-      <label>Name:<br><input type="text" name="name" required></label><br><br>
-      <label>Email:<br><input type="email" name="email" required></label><br><br>
-      <label>Message:<br><textarea name="message" rows="5" required></textarea></label><br><br>
+      <label>Name:<br><input type="text" name="name" required></label>
+      <label>Email:<br><input type="email" name="email" required></label>
+      <label>Message:<br><textarea name="message" rows="5" required></textarea></label>
       <button type="submit">Send</button>
     </form>
   </section>
+
   <footer>
     <p>&copy; 2025 Colt's Lawn & Landscape</p>
     <div class="social">

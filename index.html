@@ -17,7 +17,6 @@
       color: white;
       padding: 100px 20px;
       text-align: center;
-    }
     header h1 {
       font-size: 3rem;
       margin-bottom: 0.5rem;
@@ -112,35 +111,53 @@
     <a href="#contact">Contact</a>
   </nav>
 
-  <section id="about">
+  <section id="about" style="display: flex; align-items: center; gap: 40px;">
+  <img src="Horse Logo HD.png" alt="Colt's Lawn & Landscape Logo" style="max-width: 300px; height: auto; border-radius: 8px;">
+  <div>
     <h2>About Us</h2>
     <p>Colt's Lawn & Landscape provides professional groundskeeping and landscape solutions with a focus on estate-level property care. Our attention to detail and dedication to greener lawns sets us apart.</p>
-  </section>
+  </div>
+</section>
 
   <section id="services" class="services">
-    <h2>Our Services</h2>
-    <ul>
-      <li>Lawn Fertility</li>
-      <li>Lawn Aeration</li>
-      <li>Lawn Renovation</li>
-      <li>Lawn Maintenance</li>
-      <li>Pest & Weed Control</li>
-      <li>Landscape Maintenance</li>
-      <li>Estate Property Management</li>
-      <li>Ventrac Services</li>
-      <li>Trenching</li>
-      <li>Brush Cutting</li>
-      <li>Slope Mowing</li>
-      <li>Boom Mowing</li>
-      <li>Wide Area Mowing</li>
-      <li>Finish Grading</li>
-      <li>Stump Grinding</li>
-      <li>Soil & Site Prep</li>
-      <li>Soil Conditioning</li>
-      <li>Seeding & Overseeding</li>
-      <li>Gravel Driveway Refurbishing</li>
-    </ul>
-  </section>
+  <h2>Our Services</h2>
+  <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+    <div style="flex: 1 1 300px; background: #f0fdf4; padding: 20px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+      <h3>Core Lawn Services</h3>
+      <ul>
+        <li>Lawn Fertility</li>
+        <li>Lawn Aeration</li>
+        <li>Lawn Renovation</li>
+        <li>Lawn Maintenance</li>
+        <li>Pest & Weed Control</li>
+        <li>Landscape Maintenance</li>
+      </ul>
+    </div>
+    <div style="flex: 1 1 300px; background: #f0fdf4; padding: 20px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+      <h3>Property Management</h3>
+      <ul>
+        <li>Estate Property Management</li>
+        <li>Ventrac Services</li>
+        <li>Trenching</li>
+        <li>Brush Cutting</li>
+        <li>Slope Mowing</li>
+        <li>Boom Mowing</li>
+      </ul>
+    </div>
+    <div style="flex: 1 1 300px; background: #f0fdf4; padding: 20px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+      <h3>Specialty Services</h3>
+      <ul>
+        <li>Wide Area Mowing</li>
+        <li>Finish Grading</li>
+        <li>Stump Grinding</li>
+        <li>Soil & Site Prep</li>
+        <li>Soil Conditioning</li>
+        <li>Seeding & Overseeding</li>
+        <li>Gravel Driveway Refurbishing</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
   <section id="portfolio">
     <h2>Portfolio</h2>
@@ -148,14 +165,17 @@
   </section>
 
   <section id="contact">
-    <h2>Request a Quote</h2>
-    <form action="mailto:contact@coltslawn.com" method="post" enctype="text/plain">
-      <label>Name:<br><input type="text" name="name" required></label>
-      <label>Email:<br><input type="email" name="email" required></label>
-      <label>Message:<br><textarea name="message" rows="5" required></textarea></label>
-      <button type="submit">Send</button>
-    </form>
-  </section>
+  <h2>Get an Estimate</h2>
+  <form action="https://formsubmit.co/contact@coltslawn.com" method="POST">
+    <input type="hidden" name="_captcha" value="false">
+    <label>Full Name:<br><input type="text" name="name" required></label>
+    <label>Email Address:<br><input type="email" name="email" required></label>
+    <label>Phone Number:<br><input type="tel" name="phone" required></label>
+    <label>Service Address:<br><input type="text" name="address"></label>
+    <label>What type of services are you looking for?<br><textarea name="message" rows="5" required></textarea></label>
+    <button type="submit">Submit Request</button>
+  </form>
+</section>
 
   <footer>
     <p>&copy; 2025 Colt's Lawn & Landscape</p>

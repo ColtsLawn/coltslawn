@@ -29,7 +29,20 @@
     nav {
       background: #1b5e20;
       padding: 15px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+      flex: 1;
       text-align: center;
+    }
+    nav div {
+      display: flex;
+      justify-content: space-between;
+      max-width: 800px;
+      margin: 0 auto;
     }
     nav a {
       color: white;
@@ -106,14 +119,16 @@
   </header>
 
   <nav>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#contact">Contact</a>
+    <div>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </div>
   </nav>
 
   <section id="about" style="text-align: center;">
-  <img src="Horse Logo HD.png" alt="Horse Logo" style="max-width: 300px; height: auto; margin-bottom: 20px;">
+  <img src="Horse Logo HD.png" alt="Horse Logo" style="max-width: 400px; height: auto; margin-bottom: 20px;">
   <h2>About Us</h2>
   <p>Colt's Lawn & Landscape provides professional groundskeeping and landscape solutions with a focus on estate-level property care. Our attention to detail and dedication to greener lawns sets us apart.</p>
 </section>

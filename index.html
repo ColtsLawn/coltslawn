@@ -17,6 +17,7 @@
       color: white;
       padding: 100px 20px;
       text-align: center;
+    }
     header h1 {
       font-size: 8rem;
       margin-bottom: 0.5rem;
@@ -134,7 +135,6 @@
   <p>Colt's Lawn & Landscape provides professional groundskeeping and landscape solutions with a focus on estate-level property care. Our attention to detail and dedication to greener lawns sets us apart.</p>
 </section>
 
-    
   <section id="services" class="services" style="text-align: center;">
   <h2>Our Services</h2>
   <div style="display: flex; flex-wrap: wrap; gap: 20px;">
@@ -175,26 +175,26 @@
   </div>
 </section>
 
-    
   <section id="portfolio" style="text-align: center;">
   <h2>Portfolio</h2>
   <p>Before & After work samples coming soon!</p>
 </section>
 
-    
   <section id="contact" style="text-align: center;">
   <h2>Get an Estimate</h2>
   <form action="https://formsubmit.co/1406fea64d65c0c5ac19787479cba88c" method="POST" style="max-width: 600px; margin: 0 auto; text-align: left;">
     <input type="hidden" name="_captcha" value="false">
-    <label style="display: block; margin-bottom: 5px;">
-    <label>Full Name:<br><input type="text" name="name" required></label>
+    <label style="display: block; margin-bottom: 5px;">Full Name:</label>
+    <input type="text" name="company">
     <label>Company Name (if applicable):<br><input type="text" name="name" required></label>
-    <label>Email Address:<br><input type="email" name="email" required></label>
-    <label>Phone Number:<br><input type="tel" name="phone" required></label>
-    <label>Service Address:<br><input type="text" name="address"></label>
-    <label style="display: block; margin-bottom: 5px;">
-    <label>What type of services are you looking for?</label>
-    <textarea name="message" rows="5" required></textarea></label>
+    <label style="display: block; margin-bottom: 5px;">Email Address:</label>
+    <input type="email" name="email" required>
+    <label style="display: block; margin-bottom: 5px;">Phone Number:</label>
+    <input type="tel" name="phone" required>
+    <label style="display: block; margin-bottom: 5px;">Service Address:</label>
+    <input type="text" name="address">
+    <label style="display: block; margin-bottom: 5px;">What type of services are you looking for?</label>
+    <textarea name="message" rows="5" required></textarea>
     <button type="submit">Submit Request</button>
   </form>
 </section>
